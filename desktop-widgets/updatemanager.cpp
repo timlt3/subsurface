@@ -109,7 +109,7 @@ void UpdateManager::requestReceived()
 		if (!update_settings->dont_check_for_updates() && update_settings->next_check() == QDate::fromJulianDay(0)) {
 			// we allow an opt out of future checks
 			QMessageBox response(MainWindow::instance());
-			QString message = tr("Subsurface is checking every two weeks if a new version is available. "
+			QString message = tr("Subsurface checks every two weeks if a new version is available. "
 								 "\nIf you don't want Subsurface to continue checking, please click Decline.");
 			response.addButton(tr("Decline"), QMessageBox::RejectRole);
 			response.addButton(tr("Accept"), QMessageBox::AcceptRole);
